@@ -1,0 +1,16 @@
+# Claude Code
+CLAUDE.md
+.claude/
+prototype/.review/
+
+# OS and OneDrive files
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# Editor files
+.vscode/
+*.swp
+
+# Raw downloads 
+prototype/media/source-originals/
