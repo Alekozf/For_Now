@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>For Now — A good place to stop.</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+  <main id="view-entry" class="view view--page">
+    <div class="poster">
+      <p class="type-label">Short video collections</p>
+      <h1 id="entry-heading" class="type-display poster__title poster__title--xl" tabindex="-1">For Now</h1>
+      <p class="type-lead poster__lead">A good place to stop.</p>
+      <p class="poster__text">Each collection has a clear end. When you reach it, you can finish or open another.</p>
+      <button type="button" class="btn btn--primary poster__action" id="start">Start watching</button>
+    </div>
+  </main>
+
+  <div id="view-collection" class="view view--collection" hidden>
+    <header class="bar">
+
+      <div class="bar__inner" id="collection-entry" tabindex="-1" role="group" aria-labelledby="collection-label">
+        <p class="bar__identity">
+          <span class="type-display bar__project">For Now</span>
+          <span class="type-meta bar__collection" id="collection-label">Collection</span>
+        </p>
+        <div class="bar__finish">
+          <p class="type-meta bar__finish-note" id="finish-note">Ends this visit.</p>
+          <button type="button" class="btn btn--bar" id="finish" aria-describedby="finish-note">Finish watching</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="stage">
+
+      <section class="collection-info" aria-labelledby="collection-title">
+        <p class="type-label" id="collection-number">Collection</p>
+        <h1 class="type-display collection-info__title" id="collection-title">Collection</h1>
+        <p class="collection-info__about" id="collection-about"></p>
+        <p class="type-meta collection-info__facts" id="collection-facts"></p>
+      </section>
+
+      <div class="card theme-dark">
+        <div class="scroller" id="scroller" tabindex="0" role="region" aria-label="Clips"></div>
+
+        <div class="controls" id="controls" role="group" aria-label="Playback">
+          <button type="button" class="control control--prev" id="prev">Previous</button>
+          <button type="button" class="control control--play" id="play">Play</button>
+          <button type="button" class="control control--sound" id="sound" aria-pressed="false">Sound off</button>
+          <button type="button" class="control control--next" id="next">Next</button>
+        </div>
+      </div>
+    </main>
+
+    <p class="visually-hidden" id="status" aria-live="polite"></p>
+  </div>
+
+  <main id="view-finished" class="view view--page" hidden>
+    <div class="poster">
+      <p class="type-label">For Now</p>
+      <h1 id="finished-heading" class="type-display poster__title poster__title--l" tabindex="-1">Finished for now.</h1>
+      <div class="poster__action poster__links">
+
+        <button type="button" class="btn btn--link" id="back-to-collection">Back to collection</button>
+        <button type="button" class="btn btn--link" id="new-visit">Start a new visit</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/content.js"></script>
+  <script src="js/helpers.js"></script>
+  <script src="js/clip.js"></script>
+  <script src="js/ending.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

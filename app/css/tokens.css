@@ -1,0 +1,138 @@
+:root {
+  --color-page: #EFEEEA;
+  --color-surface: #F8F7F4;
+  --color-text: #141414;
+  --color-text-soft: #55534E;
+  --color-text-on-fill: #F8F7F4;
+  --color-line: #CDCAC2;
+  --color-control-border: #141414;
+  --color-control-hover: #E3E1DB;
+  --color-focus: #141414;
+  --color-focus-page: #141414;
+
+  --color-card: #161616;
+  --color-stage: #0B0B0B;
+
+  --color-on-media: #FFFFFF;
+  --color-on-media-soft: #E2E0DA;
+  --color-scrim: rgba(8, 8, 8, 0.72);
+  --color-scrim-strong: rgba(8, 8, 8, 0.82);
+  --color-progress-track: rgba(255, 255, 255, 0.28);
+
+  --font-display: "Antonio", "Arial Narrow", "Roboto Condensed", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  --weight-display: 700;
+  --weight-body: 400;
+  --weight-meta: 500;
+  --weight-action: 600;
+
+  --size-display-xl: clamp(5rem, 24vw, 12.5rem);
+  --size-display-l: clamp(4rem, 17vw, 9rem);
+  --size-display-m: clamp(3rem, 23cqi, 7.5rem);
+  --size-display-s: clamp(2rem, min(18cqi, 7.5cqh), 4.5rem);
+  --size-identity: 1.5rem;
+  --size-lead: clamp(1.25rem, 2.4vw, 1.5rem);
+  --size-subhead: 1.125rem;
+  --size-body: 1rem;
+  --size-caption: 0.9375rem;
+  --size-button: 0.9375rem;
+  --size-meta: 0.875rem;
+  --size-label: 0.75rem;
+
+  --leading-display: 0.9;
+  --leading-tight: 1.25;
+  --leading-body: 1.5;
+  --tracking-display: 0.01em;
+  --tracking-label: 0.08em;
+  --tracking-meta: 0.01em;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --gutter: 1.25rem;
+  --layout-max: 80rem;
+
+  --radius-card: 6px;
+  --radius-media: 3px;
+  --radius-control: 4px;
+  --border-control: 2px;
+  --border-rule: 1px;
+  --focus-width: 3px;
+  --focus-offset: 3px;
+
+  --touch-target: 2.75rem;
+  --choice-height: 3.5rem;
+  --controls-height: 4rem;
+  --card-padding: 0.5rem;
+  --home-band: 0px;
+
+  --frame-w: 880;
+  --frame-h: 1788;
+  --frame-screen-top: 39;
+  --frame-screen-side: 46;
+  --frame-screen-bottom: 39;
+  --frame-top-clear: 0;
+  --frame-caption-reserve: 6rem;
+  --frame-home-band: 60;
+  --frame-controls-inset: 16;
+  --frame-outer-radius: 147;
+  --frame-screen-radius: 110;
+
+  --duration-fast: 120ms;
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --gutter: 2.5rem;
+  }
+}
+
+.theme-dark {
+  color-scheme: dark;
+  --color-card: #161616;
+  --color-surface: #262626;
+  --color-text: #F2F1ED;
+  --color-text-soft: #ABA8A1;
+  --color-text-on-fill: #141414;
+  --color-line: #2E2E2E;
+  --color-control-border: #8A8780;
+  --color-control-hover: #303030;
+  --color-focus: #F2F1ED;
+}
+
+@media (max-width: 47.99rem) {
+  .view--collection:not(.is-at-ending) .bar {
+    color-scheme: dark;
+    color: var(--color-text);
+    --color-page: #161616;
+    --color-surface: #262626;
+    --color-text: #F2F1ED;
+    --color-text-soft: #ABA8A1;
+    --color-line: #2E2E2E;
+    --color-control-border: #F2F1ED;
+    --color-control-hover: #303030;
+    --color-focus: #F2F1ED;
+  }
+}
+
+.theme-paper {
+  color-scheme: light;
+  --color-background: #EFEEEA;
+  --color-surface: #F8F7F4;
+  --color-text: #141414;
+  --color-text-soft: #55534E;
+  --color-text-on-fill: #F8F7F4;
+  --color-line: #CDCAC2;
+  --color-control-border: #141414;
+  --color-control-hover: #E3E1DB;
+  --color-focus: #141414;
+}

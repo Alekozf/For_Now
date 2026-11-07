@@ -1,7 +1,6 @@
 # Claude Code
 CLAUDE.md
 .claude/
-prototype/.review/
 
 # OS and OneDrive files
 desktop.ini
@@ -12,5 +11,6 @@ Thumbs.db
 .vscode/
 *.swp
 
-# Raw downloads 
-prototype/media/source-originals/
+# Private working files: docs, the A2 prototype and its borrowed footage,
+# old edits and presentation material. Never published.
+working/
